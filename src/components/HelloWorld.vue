@@ -156,11 +156,13 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style  lang="scss">
+ $main-color: black;
+ $border: solid $main-color 1px;
+ $no-border:  0px solid ;
 
 .cg2{
-  border: solid black 1px;
+  border: $border;
   padding: 5px;
   font-size: 20px;
 }
@@ -171,14 +173,14 @@ export default {
 .barcode1input{
   font-size: 12px;
   text-align: center;
-  border: 0px solid;
+  border: $no-border;
   
 }
 .produktas{
   font-size: 22px;
   font-weight: bolder;
   width: 100%;
-  border: 0px solid;
+  border: $no-border;
 
 }
 .imageLogo{
@@ -198,19 +200,19 @@ export default {
 }
 .adresasKairej{
   
-  border: 0px solid;
+  border: $no-border;
 }
 .nrLeft{
   font-size: 25px;
   font-weight: bolder;
   width: 200px;
-  border: 0px solid;
+  border: $no-border;
 }
 .nrR{
   font-size: 25px;
   font-weight: bolder;
   width: 100px;
-  border: 0px solid;
+  border: $no-border;
 }
 .transformCode{
   transform: rotate(90deg);
@@ -220,6 +222,6 @@ export default {
 }
 .infoRight{
   background-color: lightgray;
-  border: 0px solid;
+  border: $no-border;
 }
 </style>
