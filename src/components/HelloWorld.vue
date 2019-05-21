@@ -225,14 +225,19 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
+$maincolor: black;
+$noborder: 0px solid;
+$bordersize: 1px;
+
+
 .hozlinija {
   padding-right: 10px;
-  border-left: 1px black solid;
+  border-left: $bordersize $maincolor solid;
 }
 
 .cg2 {
-  border: solid black 1px;
+  border: solid $maincolor 1px;
   margin: 5px;
   font-size: 22px;
   padding: 5px;
@@ -285,10 +290,10 @@ export default {
   font-size: 11px;
 }
 .hozLine {
-  border-top: 1px black solid;
+  border-top: $bordersize $maincolor solid;
 }
 .adresasKairej {
-  border: 0px solid;
+  border:$noborder;
   font-size: 20px;
   padding-top: 30px;
   padding-bottom: 90px;
@@ -305,7 +310,7 @@ export default {
   font-size: 38px;
   font-weight: bolder;
   line-height: 18px;
-  border: 0px solid;
+  border: $noborder;
   width: 170px;
   
 }
@@ -314,7 +319,7 @@ export default {
   font-size: 38px;
   font-weight: bolder;
   line-height: 18px;
-  border: 0px solid;
+  border: $noborder;
   width: 170px;
 }
 .nrPos{
@@ -322,25 +327,25 @@ export default {
   font-size: 38px;
   font-weight: bolder;
   line-height: 18px;
-  border: 0px solid;
+  border: $noborder;
   width: 30px;
 }
 .nrR {
   font-size: 18px;
   font-weight: bolder;
   width: 70px;
-  border: 0px solid;
+  border: $noborder;
 }
 .nrR2{
    font-size: 18px;
   font-weight: bolder;
   width: 70px;
-  border: 0px solid;
+  border: $noborder;
   padding-top: 0px;
 }
 .customer{
   font-size: 24px;
-  color: black;
+  color: $maincolor;
 }
 .transformCode {
   transform: rotate(90deg);
@@ -350,13 +355,13 @@ export default {
 }
 .infoRight {
   background-color: rgb(236, 236, 236);
-  border: 0px solid;
+  border: $noborder;
 }
 .area{
   background-color: rgb(236, 236, 236);
 }
 .leftLine{
-  border-left: 1px black solid;
+  border-left: $bordersize $maincolor solid;
 }
 
 </style>
